@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <script>
+    
+        function cuentaletra(texto) {
+            var mensaje = document.getElementById(texto).value;
+            var cadena = mensaje.split('');
+            var contador = {};
+            cadena.forEach(function(valor) {
+                if (contador[valor] === undefined) {contador[valor] = 1} else {contador[valor] += 1}
+            });
+            document.getElementById('resultado').innerHTML ;
+            for (var clave in contador) {
+                document.getElementById('resultado').innerHTML += '-' + clave + ':' + contador[clave] + '<br>'; 
+            }
+            document.getElementById('resultado').innerHTML ;
+           
+            
+        }  
+        
+        
+        function ascii(){
+            var str=document.getElementById("id"); 
+            var a="El codigo ASII es -    "; 
+          document.getElementById("demo").innerHTML =a+str.value.charCodeAt(0); 
+            
+        }
+        </script>
+
+
+<body background="fon3.jpg">
+
+    <h1 style="color: mediumorchid;">  ¿Quieres saber cuantas letras tiene tu texto?</h1>
+    <h1 style="color: orange;">"Ingresa la palabra o texto que desses saber "</h1>
+
+    
+ <div id="content"><hr>
+    <h3 > Ingresa el texto </h3><br>
+    
+    <input type="text" id="texto" >
+    <input type="button" id="boton" name="boton" value="Contando letras" onclick="cuentaletra('texto')">
+
+</div>
+
+<div id="resultado" ></div>
+<br>
+<br>
+<hr>
+<br>
+
+<h1 style="color:  orange;"> Codigo ASII</h1>
+
+<button onclick="ascii()">Obtener valor</button> 
+
+    <h3 style="color: rgb(248, 252, 248);">Ingrere el caracter: </h2>
+    <input type="text" id="id" name="text1"> </br> 
+    <br>
+ 
+
+ <div id="demo" style="color:chocolate;"></div> 
+ <br>
+ <hr>
+
+
+</body>
+</html>

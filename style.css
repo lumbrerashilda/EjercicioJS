@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap');
+section {
+    text-align: center;
+    border-inline-end-color: khaki;
+}
+
+h1{
+    font-family: 'Itim', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+h3{
+    -moz-text-decoration-line: line-through;
+    text-decoration-color: currentColor;
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+  
+}
